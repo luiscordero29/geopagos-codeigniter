@@ -18,25 +18,25 @@
 				  	<div class="form-group row">
 					    <label for="surface" class="col-sm-2 col-form-label">Superficie:</label>
 					    <div class="col-sm-10">
-					      	<input name="surface" type="text" class="form-control" id="surface" value="<?php echo set_value('superficie'); ?>">
+					      	<input name="surface" type="text" class="form-control" id="surface" value="<?php echo set_value('surface'); ?>">
 					    </div>
 				  	</div>
 				  	<div class="form-group row">
 					    <label for="base" class="col-sm-2 col-form-label">Base:</label>
 					    <div class="col-sm-10">
-					      	<input name="base" type="text" class="form-control" id="base" value="<?php echo set_value('superficie'); ?>">
+					      	<input name="base" type="text" class="form-control" id="base" value="<?php echo set_value('base'); ?>">
 					    </div>
 				  	</div>
 				  	<div class="form-group row">
 					    <label for="height" class="col-sm-2 col-form-label">Altura:</label>
 					    <div class="col-sm-10">
-					      	<input name="height" type="text" class="form-control" id="height" value="<?php echo set_value('superficie'); ?>">
+					      	<input name="height" type="text" class="form-control" id="height" value="<?php echo set_value('height'); ?>">
 					    </div>
 				  	</div>
 				  	<div class="form-group row">
 					    <label for="diameter" class="col-sm-2 col-form-label">Diametro:</label>
 					    <div class="col-sm-10">
-					      	<input name="diameter" type="text" class="form-control" id="diameter" value="<?php echo set_value('superficie'); ?>">
+					      	<input name="diameter" type="text" class="form-control" id="diameter" value="<?php echo set_value('diameter'); ?>">
 					    </div>
 				  	</div>
 				  	<div class="form-group row">
@@ -44,9 +44,9 @@
 					    <div class="col-sm-10">
 					      	<select name="shape" class="form-control" id="shape">
 							    <option value="">Seleccione...</option>
-							    <option value="square">Cuadrado</option>
-							    <option value="triangle">Triángulo</option>
-							    <option value="circle">Círculo</option>
+							    <option <?php if(set_value('shape') == 'square'): ?> selected <?php endif; ?> value="square">Cuadrado</option>
+							    <option <?php if(set_value('shape') == 'triangle'): ?> selected <?php endif; ?> value="triangle">Triángulo</option>
+							    <option <?php if(set_value('shape') == 'circle'): ?> selected <?php endif; ?> value="circle">Círculo</option>
 							</select>
 					    </div>
 				  	</div>
