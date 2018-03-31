@@ -26,9 +26,11 @@ user_guide_src/
 *.sublime-project
 /tests/
 
-assets/*
+assets/components/bootstrap/*
 !assets/components/bootstrap/dist/*
+assets/components/jquery/*
 !assets/components/jquery/dist/*
+assets/components/popper.js/dist/*
 !assets/components/popper.js/dist/umd/*
 
 .bowerrc
